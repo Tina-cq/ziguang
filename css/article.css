@@ -1,0 +1,143 @@
+/*css reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header,menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+i{
+    font-style:normal
+}
+*{padding: 0;margin: 0;}
+body {
+    line-height:1;
+    font-family: 'Microsoft yahei';
+    font-size: 14px;
+    color:#000 ;
+    background: #fff;
+}
+
+.wrap{
+    width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+h1{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    padding-bottom: 20px;
+}
+.time{
+    float: left;
+    font: 12px/12px SimSun;
+}
+.time span{
+    color: #f72a2a;
+}
+.resize{
+    float: right;
+}
+.resize i{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("../images/photos3.jpg") no-repeat 0 -33px;
+    cursor: pointer;
+}
+.resize i:nth-child(2){
+    background: url("../images/photos3.jpg") no-repeat 0 -65px;
+}
+.resize i:nth-child(1):hover{
+    background: url("../images/photos3.jpg") no-repeat 0 -132px;
+}
+.resize i:nth-child(2):hover{
+    background: url("../images/photos3.jpg") no-repeat 0 -164px;
+}
+.info:after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.info{
+    border-bottom: 1px solid #dfdfdf;
+    zoom:1;
+}
+.cont{
+    text-align: left;
+    margin-top: 30px;
+}
+.cont p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.footer{
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #6a6a6a;
+    background: #f3f3f3;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    /*position: static;*/
+}
+
+@media screen and (max-width: 1300px) {
+    .wrap {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+
+    .cont{
+        margin-top: 9px;
+    }
+    .cont p{
+        font-size: 14px !important;
+        line-height: 23px;
+        margin-bottom: 15px;
+    }
+    .resize {
+       display: none;
+    }
+    h1{
+        padding-bottom: 2px;
+    }
+    .info{
+        padding: 10px 0;
+    }
+    .footer{
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 435px) {
+    h1{
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width: 360px) {
+    h1{
+        font-size: 19px;
+    }
+}

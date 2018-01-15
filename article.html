@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/article.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="wrap" id="wrap">
+    <div class="header">
+        <h1>浦发否认被两千家壳公司骗取千亿授信，四川银监局称正在调查</h1>
+        <div class="info">
+            <div class="time">2017-04-05 21:21 <span>来源：Wind资讯</span></div>
+            <div class="resize" id="resize"><i></i> <i></i></div>
+        </div>
+    </div>
+    <div class="cont" id="cont">
+        <p>澎湃新闻报道，针对网络流传的《浦发银行成都分行成“壳”公司温床，违规资金超1000亿元》传言，浦发银行4月5日晚间回应称，关注到有关网传信息，相关信息与事实不符。</p>
+        <p>四川银监局一名内部人士同日也对此回应表示，昨天看到这个信息后已经在关注，现在正在调查当中，一切都在调查中。</p>
+        <p>浦发银行在回应中也提到，近年来，受区域经济影响，“我行成都分行资产质量承受一定压力，煤炭等产能过剩行业的贷款逾期情况攀升，我行总、分行均已采取必要措施加强管理，积极处置化解。目前我行成都分行经营正常，风险整体可控。对于发布和传播不实信息，影响我行正常经营秩序的个人和机构，我行保留追究其法律责任的权利。”</p>
+        <p>4月4日，一篇题为《浦发银行成都分行成“壳”公司温床，违规资金超1000亿元》的文章在网络流传。文章援引所谓浦发人士的说法称，“浦发成都分行烂账多到近千亿元，还只是四个大佬用2010个虚假的“壳”公司操作的，浦发成都三分之一以上的业务成了这几个大佬的”。</p>
+        <p>上述文章提及，银监会和四川银监局在发现问题后，安排浦发银行总行于2016年7月向成都分行派驻工作组排查、化解风险。排摸情况显示，成都分行通过向多家非正常经营或虚假注册的2010个“壳”公司投放授信1655笔，合计1600亿元，并最终由7大集团公司实际使用。这7个大集团，穿透后的实际控制人只有四个：唐铭杨、罗山东、何文军、杨凤鸣。截至目前已显现风险865亿元。</p>
+    </div>
+</div>
+<div class="footer" id="footer">
+    Copyright © 2017 chinabigdata. All Rights Reserved
+</div>
+
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        var fontSize=14;
+        $("#resize i").click(function(){
+            if($(this).index()==0){
+                fontSize--;
+            }
+            if($(this).index()==1){
+                fontSize++;
+            }
+            if(fontSize>=18){
+                fontSize=18
+            }else if(fontSize<=14){
+                fontSize=14
+            }
+            $("#cont p").css("font-size",fontSize)
+        });
+    });
+//***********************************************************
+    window.onload=window.onresize=function(){
+        footerPosition();
+    };
+    function id(id){
+        return document.getElementById(id)
+    }
+    //判断footer的位置
+    function footerPosition(){
+        var hei=window.screen.height ;
+        var wrapHei=id("wrap").offsetHeight;
+        var footerHei=id("footer").offsetHeight;
+//        console.log(hei)
+//        console.log(wrapHei)
+        if(wrapHei>hei-footerHei){
+            id("footer").style.position="static";
+        }else{
+            id("footer").style.position="fixed";
+        }
+    }
+
+</script>

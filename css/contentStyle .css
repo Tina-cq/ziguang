@@ -1,0 +1,544 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle;outline: none;border: 0;border: none}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body {background:#fff}   /* 重置body 页面背景为白色 */
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1 ;font-family:SimSun;color:#6a6a6a} /* 重置页面文字属性 */
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */
+i, cite, em,var, address { font-style: normal;}
+/* 页面设置 */
+/* 取消a标签点击后的虚线框 */
+a {outline: none;}
+a:active {star:expression(this.onFocus=this.blur());}
+
+/*头部样式*/
+
+.header h1{
+    float: left;
+    font-size: 18px;
+    line-height: 45px;
+    height: 45px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Microsoft yahei";
+}
+.header .search{
+    float: left;
+    width: 166px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 30px;
+    background: #488dd9 url("../images/search.png") no-repeat 12px center;
+    overflow: hidden;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.header .search input{
+    color: #9ac5f4;
+    font-size: 12px;
+    line-height: 45px;
+    background:#488dd9;
+    height: 45px;
+    padding-left: 7px;
+}
+.header ul{
+    float: right;
+}
+.header ul a{
+    float: left;
+    color: #fff;
+}
+.active{
+    background: #dc3324;
+    font-weight: bold;
+}
+.header ul li{
+    padding: 0 11px;
+    height: 45px;
+    line-height: 45px;
+}
+
+/*头部样式结束*/
+/*/!*中间部分*!/*/
+
+
+dd{
+    width: 100%;
+}
+dd img{
+    width: 100%;
+}
+.idBox1{
+    height: 45px;
+}
+.idBox{
+    height: 45px;
+    margin-top:-45px;
+}
+/*行业资讯部分*/
+
+.section01Title{
+    line-height: 41px;
+    color: #3b83d7;
+    font-size: 12px;
+    font-weight: bold;
+}
+.info{
+    height: 90px;
+}
+ .infoLeft{
+    float: left;
+    width: 36%;
+    height: 90px;
+    background:#f6f6f6 ;
+    padding: 12px 0 12px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ .infoRight{
+    float: right;
+}
+ .infoLeft-top:after{
+     content: '';
+     display: block;
+     height: 0;
+     line-height: 0;
+     visibility: hidden;
+     clear: both;
+}
+.infoLeft-top{
+    color: #ff0000;
+    zoom:1;
+}
+.arrow{
+    display: inline-block;
+    width: 31px;
+    height: 33px;
+    background: url("../images/spirit.png") no-repeat -31px top;
+}
+/******************************************变绿色样式*/
+ .green{
+    color: #008900;
+}
+ .green .arrow{
+    display: inline-block;
+    width: 31px;
+    height: 33px;
+    background: url("../images/spirit.png") no-repeat -67px top;
+}
+/******************************************/
+ .infoLeft-top div{
+    float: left;
+}
+ .infoLeft-top div:first-child span{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Microsoft yahei";
+}
+ .infoLeft-top div:last-child p{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+    line-height: 18px;
+}
+ .infoLeft-bottom span{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 14px;
+}
+ .infoLeft-bottom span:first-child{
+    padding-right: 36px;
+}
+ .infoRight{
+    width: 64%;
+
+}
+ .infoRight table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 9px;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ .infoRight table tr td{
+    font-size: 12px;
+    line-height: 23px;
+}
+ .infoRight table tr td span{
+    color: #ff0000;
+}
+ .infoRight table tbody{
+    border-bottom: 1px solid #e5e5e5;
+}
+ .infoRight table:last-child tbody{
+    border-bottom: none;
+    letter-spacing: -0.5px;
+}
+ .section01Pic{
+    margin-top: 19px;
+    width: 100%;
+}
+.section01Pic img{
+    width: 100%;
+}
+.section01Right dl{
+    width: 100%;
+    margin-bottom: 7px;
+}
+.section01Right dl:first-child{
+    margin-top: 9px;
+}
+.title{
+    line-height: 22px;
+    height: 22px;
+    border-bottom: 1px solid #ededed;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.title span{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 22px;
+    border-bottom: 2px solid #3883d6;
+    padding: 0 5px;
+    text-align: center;
+    color: #000;
+}
+.section01Right dl dd{
+    line-height: 22px;
+    height: 22px;
+}
+.section01Right dl dd i{
+    font-weight: bold;
+    padding-right: 5px;
+}
+.section01Right dl dd span{
+    float: right;
+    color: #a2a2a2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section01Right a:hover{
+    color: #3883d6;
+}
+.section01Right a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section01Right a p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 22px;
+    line-height: 22px;
+    margin-right:88px;
+}
+/*行业资讯部分结束*/
+/*机构调研部分样式*/
+.til{
+    width: 100%;
+    height: 32px;
+    background: url("../images/tilBg.png") no-repeat left;
+    background-size: cover;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 16px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    /*margin-left: 4px;*/
+    margin-bottom: 11px;
+}
+.til i{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 12px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.section02Left dd{
+    line-height: 18px;
+    padding-top: 10px;
+    width: 100%;
+}
+.section02Left dd img{
+    width: 100%;
+}
+.table{
+    text-align: left;
+    padding-left: 7px;
+}
+.table tr th{
+    text-align: left;
+}
+.table tr:nth-child(1){
+    background: #f2f2f2;
+}
+.table tr{
+    height: 23px;
+    line-height: 23px;
+    border-top: 1px solid  #f2f2f2;
+}
+.table tr th:first-child{
+   padding-left: 5px;
+}
+.table tr td:first-child{
+    padding-left: 7px;
+}
+.section h3{
+    line-height: 28px;
+    font-size: 12px;
+    height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section h3 a{
+    color: #3883d6;
+}
+.section h3 a:hover{
+    text-decoration: underline;
+}
+.time{
+    color: #a2a2a2;
+}
+.section02Right dd{
+    padding-bottom:11px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.section02Right dd p:nth-of-type(2){
+    line-height: 32px;
+
+}
+.section02Right dd p:nth-of-type(2) span{
+    color: #ff0000;
+    padding-right: 38px;
+}
+.section02Right dd p:nth-of-type(3){
+    line-height: 16px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*机构调研部分样式结束*/
+/*主力追踪部分样式*/
+.section03Left dd{
+    width: 100%;
+    padding-top: 7px;
+}
+.section03Left dd img{
+    width: 100%;
+}
+.picTil{
+    line-height: 36px;
+    padding-top: 6px;
+}
+.section03Right dd:nth-of-type(1) p:nth-of-type(2){
+    line-height: 22px;
+    padding-top: 6px;
+}
+.section03RightTable tbody tr{
+    line-height: 20px;
+    height: 20px;
+}
+.section03RightTable tbody tr{
+    border-top: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+/*主力追踪部分样式结束*/
+/*财务状况部分样式*/
+.pic-til{
+    padding-left: 20px;
+    background: url("../images/arrow.jpg") no-repeat left center;
+    height: 47px;
+    line-height: 47px;
+}
+.section04Left dl,.section04Right dl{
+    margin-top: 8px;
+}
+.section04Right table tr{
+    line-height: 23px;
+    height: 23px;
+}
+.section04Right table tr:empty{
+    height: 9px;
+    border-bottom: none;
+}
+.data{
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #ededed;
+}
+.financialTil{
+    background: #f3f3f3;
+}
+.financialTil td{
+    font-weight: bold;
+    color: #6a6a6a;
+}
+.section04Right table tr:not(.financialTil){
+    border-bottom: 1px solid #f3f3f3;
+}
+.section04Right tbody tr td:first-child{
+    padding-left: 5px;
+}
+/*财务状况部分样式结束*/
+/*股本股东部分样式*/
+.section05Table table{
+    margin-top: 10px;
+}
+.section05Table tbody tr{
+    border-bottom: 1px solid #f2f2f2;
+    border-top: none;
+}
+.section05Table tbody tr td:first-child{
+    padding-left: 3px;
+}
+.section05Table tbody tr td span{
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 32px;
+}
+.up{
+    background: url("../images/spirit.png") no-repeat left top;
+}
+.down{
+    background: url("../images/spirit.png") no-repeat -13px top;
+}
+.section05Left dl,.section05Right dl{
+    margin-top: 8px;
+}
+.section05Right dl:first-child dd{
+    margin-top: 10px;
+}
+.section05Right dl:first-child dd p{
+    line-height: 24px;
+}
+.section05Right table tr td span{
+    margin-left: 10px;
+}
+.section05Left dd img,.section05Right dd img{
+    height: 170px;
+}
+/*股本股东部分样式结束*/
+/*高管动向*/
+
+/*高管动向结束*/
+/*分红融资*/
+.section07Left img{
+    width: 100%;
+    margin-top: 16px;
+}
+.section07Left p{
+    line-height: 24px;
+    padding-top: 4px;
+}
+.bonusTil{
+    background: #f6f6f6;
+
+}
+.bonusTil td{
+    color: #1c75d7;
+}
+.section07Table tr{
+    border-top:none;
+    border-bottom: 1px solid #f2f2f2;
+}
+.section07Table td{
+    line-height: 23px;
+}
+/*分红融资结束*/
+/*同行比较*/
+.compare{
+    height: 27px;
+    line-height: 27px;
+    margin-top: 9px;
+}
+.compare p{
+    float: left;
+}
+.compare div{
+    float: left;
+    margin-left: 36px;
+    height: 24px;
+    border: 1px solid #d0d0d0;
+    padding:0 7px 0 19px;
+    line-height: 24px;
+}
+.compare div span{
+    display: inline-block;
+    width: 13px;
+    height: 21px;
+    background: url("../images/spirit.png") no-repeat left -16px;
+    vertical-align: middle;
+}
+.section08 ul li{
+    float: left;
+}
+.section08 table tr{
+    height: 33px;
+    line-height: 33px;
+}
+.section08 table{
+    margin-bottom: 18px;
+}
+/*同行比较结束*/
+/*公司概况*/
+.section09Left table{
+    margin-top: 10px;
+}
+.section09Left table tr{
+    line-height: 24px;
+    height: 24px;
+}
+.section09Left table tr td{
+    padding-left: 7px;
+}
+.section09Left table tr td:first-child{
+   color: #a2a2a2;
+}
+.section09Left table tr td:nth-child(3){
+    color: #a2a2a2;
+}
+.section09Left table tr:nth-child(2n+1){
+    background: #f7f7f7;
+}
+.section09Table tr {
+    border-top: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+/*公司概况结束*/
+/*中间部分结束*/
